@@ -8,6 +8,9 @@ const jwt = require('jsonwebtoken');
  * @route   POST /api/auth/signup
  * @desc    Register a new user
  */
+router.get('/test', (req, res) => {
+  res.json({ message: "Auth Test route working ✅" });
+});
 router.post('/signup', async (req, res) => {
   console.log("✅ [Signup] Route hit");
 
